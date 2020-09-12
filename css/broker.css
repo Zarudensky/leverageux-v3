@@ -1,0 +1,149 @@
+/*---------- header ----------*/
+.broker__page .header.scrolled .header__block_logo:before {
+  background: linear-gradient(94.95deg, #0BA96D 0%, #02234A 103.53%);
+}
+.broker__page .header__menu_line {
+  background: linear-gradient(147.42deg, #50b9ae 10.26%, #9bc496 115.14%);
+}
+
+/*---------- hero ----------*/
+.broker__page .section__hero {
+  background-image: url(../img/showcases/broker/hero.jpg);
+}
+
+/*---------- section__summary ----------*/
+.broker__page .summary__block-info a:hover {
+  background: linear-gradient(94.95deg, #04234A 0%, #0BAA6D 103.53%);
+}
+
+/*---------- section__comment ----------*/
+.section__comment {
+  background: linear-gradient(234.91deg, #0BAA6D -1.74%, #04234A 92.3%);
+}
+
+/*---------- section__goals ----------*/
+.goals__block-project h3:after,
+.goals__block-project h3:before,
+.goals__block-project .goal:last-child:before { 
+  background: #00C59E;
+}
+.goals__block-project .goal {
+  border-right: 1px solid #00C59E;
+  padding-bottom: 75px;
+}
+.goals__block-business .goal {
+  padding-bottom: 80px;
+}
+.goals__block-business .goal_2:after {
+  top: 2px;
+}
+.goals__block-project .goal:after {
+  content: url(../img/showcases/insight/goal.svg);
+}
+
+/*---------- section__challenges ----------*/
+.challenge_1 {
+  top: 375px;
+  right: calc(50% - 375px);
+}
+.challenge_2 {
+  top: 280px;
+  left: calc(50% - 540px);
+}
+.challenge_3 {
+  top: 202px;
+  right: calc(50% - 412px);
+}
+.challenge_4 {
+  top: 126px;
+  left: calc(50% - 375px);
+}
+/*---------- section__approach ----------*/
+.section__approach .showcase__title {
+  margin-bottom: 125px;
+}
+.title__line-approach {
+  background: #0095B6;
+}
+.approach__steps {
+  margin-left: -150px;
+  margin-bottom: 25px;
+}
+.step_1 {
+  left: 16.5%;
+  bottom: -3%;
+}
+.step_2 {
+  top: -8%;
+  left: 6%;
+}
+.step_3 {
+  top: -20%;
+  left: 58%;
+}
+.step_4 {
+  left: 95.2%;
+  bottom: 20.5%;
+}
+
+/*---------- section__board ----------*/
+.section__updated .section__container_img {
+  background-image: url(../img/showcases/broker/updated.jpg);
+}
+.section__updated .section__container_text {
+  margin-top: 150px;
+}
+
+.section__visual .section__container_img {
+  background-image: url(../img/showcases/broker/visual.jpg);
+}
+.section__visual .section__container_text {
+  margin-top: 110px;
+}
+
+.section__driven {
+  margin-bottom: 65px;
+  padding-bottom: 65px;
+}
+.section__driven .section__container_img {
+  background-image: url(../img/showcases/broker/driven.jpg);
+}
+.section__driven .section__container_text {
+  margin-top: 175px;
+}
+
+/*---------- section__results ----------*/
+.results__block-final h3 {
+  color: #00B8AD;
+}
+
+/*---------- footer ----------*/
+.broker__page .footer {
+  background-image: url(../img/showcases/broker/footer.svg);
+}
+
+@media screen and (max-width: 1100px) {
+  .challenge_1:before {
+    background: #0daf8a;
+  }
+  .challenge_2:before {
+    background: #0fac8b;
+  }
+  .challenge_3:before {
+    background: #0b9495;
+  }
+  .challenge_4:before {
+    background: #0b9595;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .broker__page .footer {
+    background-image: url(../img/showcases/broker/footer_mob.svg);
+  }
+}
+@media screen and (max-width: 560px) {
+  .broker__page .section__hero {
+    background-image: url(../img/showcases/broker/hero_mob.jpg);
+  }
+}

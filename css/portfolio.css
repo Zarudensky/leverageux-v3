@@ -1,0 +1,206 @@
+.portfolio__page .section__hero {
+  height: calc(700px - 210px);
+  padding-top: 210px;
+  background-image: url(../img/portfolio/hero.png);
+}
+.section__data {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section__data_description {
+  width: 100%;
+  max-width: 890px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #4A4A4A;
+  margin-bottom: 50px;
+}
+.data__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 50px);
+  max-width: 1075px;
+  margin-bottom: 140px;
+}
+.data__container_block {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.data__container_block-last {
+  margin-left: -25px;
+}
+.data__container_number {
+  position: relative;
+  margin-right: 12px;
+}
+.data__container_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 85px;
+  margin-top: 20px;
+}
+.data__container_description.center {
+  margin-top: 7px;
+}
+.data__container_description p {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  text-align: left;
+  color: #6C6C6C;
+}
+.data__container_line {
+  width: 1px;
+  height: 44px;
+  background: #aaa;
+}
+.section__data_inscription {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.section__data_inscription img {
+  border: 42px solid #fff;
+  background: #fff;
+  z-index: 2;
+}
+.section__data_inscription:before {
+  position: absolute;
+  content: '';
+  display: block;
+  height: 1px;
+  background: #D8D8D8;
+  top: 135px;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.section__broker .section__container_img {
+  background-image: url(../img/portfolio/broker.jpg);
+}
+.section__broker .section__container_text {
+  margin-top: 75px;
+}
+.section__broker span.pt_4 {
+  margin-right: 10%;
+}
+.section__insight .section__container_img {
+  background-image: url(../img/portfolio/insight.jpg);
+}
+.section__insight .section__container_text {
+  margin-top: 75px;
+}
+.section__rank .section__container_img {
+  background-image: url(../img/portfolio/rank.jpg);
+}
+.section__rank .section__container_text {
+  margin-top: 75px;
+}
+.br_mob {
+  display: none;
+}
+
+@media screen and (max-width: 1220px) {
+	.portfolio__page .section__hero {
+    height: calc(465px - 96px);
+    padding-top: 96px;
+  }
+  .portfolio__page .hero__descr {
+    max-width: 295px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .portfolio__page .section__container_text {
+    margin-top: 0;
+  }
+  .data__container_line {
+    display: none;
+  }
+  .section__broker span.pt_4 {
+    margin-right: 6px;
+  }
+  .br_desck {
+    display: none;
+  }
+  .br_mob {
+    display: inline;
+  }
+}
+@media screen and (max-width: 920px) {
+  .data__container {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .data__container_number {
+    margin: 0 0 10px 0;
+  }
+  .data__container_block {
+    width: 200px;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  .data__container_description {
+    flex-direction: row;
+    height: auto;
+    margin-top: 0
+  }
+  .data__container_description.center {
+    margin-top: 0
+  }
+  .data__container_description img {
+    margin-right: 10px;
+  }
+  .data__container_description p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .data__container_description p br {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .section__data_inscription {
+    margin-bottom: 40px;
+  }
+  .section__data_inscription img {
+    height: 100px;
+    border: none;
+  }
+  .section__data_inscription:before {
+    content: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section__data_description {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .portfolio__page .section__hero {
+    background-image: url(../img/portfolio/hero_mob.png);
+    height: calc(365px - 96px);
+  }
+  .portfolio__page .hero__lines {
+    background-image: url(../img/portfolio/hero_lines_mob.svg);
+    background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -khtml-background-size: contain;
+  }
+}

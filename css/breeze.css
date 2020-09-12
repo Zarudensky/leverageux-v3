@@ -1,0 +1,124 @@
+/*---------- header ----------*/
+.breeze__page .header.scrolled .header__block_logo:before {
+  background: linear-gradient(94.95deg, #C71DEA 0%, #1E38D7 103.53%);
+}
+.breeze__page .header__menu_line {
+  background: linear-gradient(147.42deg, #c57af3 10.26%, #e0aacd 115.14%);
+}
+
+/*---------- hero ----------*/
+.breeze__page .section__hero {
+  background-image: url(../img/showcases/breeze/hero.jpg);
+}
+
+/*---------- section__summary ----------*/
+.breeze__page .summary__block-info a:hover {
+  background: linear-gradient(94.95deg, #1E38D7 0%, #C71DEA 103.53%);
+}
+
+/*---------- section__comment ----------*/
+.section__comment {
+  background: linear-gradient(234.91deg, #C71DEA -1.74%, #1E38D7 92.3%);
+}
+
+/*---------- section__goals ----------*/
+.goals__block-project h3:after,
+.goals__block-project h3:before,
+.goals__block-project .goal:last-child:before { 
+  background: #E560FF;
+}
+.goals__block-project .goal {
+  border-right: 1px solid #E560FF;
+  padding-bottom: 80px;
+}
+.goals__block-business .goal {
+  padding-bottom: 80px;
+}
+.goals__block-business .goal_1 {
+  min-height: 68px;
+  padding-top: 10px;
+}
+.goals__block-project .goal:after {
+  content: url(../img/showcases/breeze/goal.svg);
+}
+
+/*---------- section__challenges ----------*/
+.challenge_1 {
+  top: 378px;
+  right: calc(50% - 385px);
+}
+.challenge_2 {
+  top: 290px;
+  left: calc(50% - 458px);
+}
+.challenge_3 {
+  top: 214px;
+  right: calc(50% - 360px);
+}
+.challenge_4 {
+  top: 118px;
+  left: calc(50% - 410px);
+}
+
+/*---------- section__approach ----------*/
+.title__line-approach {
+  background: #6C54E3;
+}
+
+/*---------- section__board ----------*/
+.section__updated .section__container_img {
+  background-image: url(../img/showcases/breeze/updated.jpg);
+}
+.section__updated .section__container_text {
+  margin-top: 140px;
+}
+
+.section__visual .section__container_img {
+  background-image: url(../img/showcases/breeze/visual.jpg);
+}
+.section__visual .section__container_text {
+  margin-top: 110px;
+}
+
+.section__driven .section__container_img {
+  background-image: url(../img/showcases/breeze/driven.jpg);
+}
+.section__driven .section__container_text {
+  margin-top: 80px;
+}
+
+/*---------- section__results ----------*/
+.results__block-final h3 {
+  color: #AB34F4;
+}
+
+/*---------- footer ----------*/
+.breeze__page .footer {
+  background-image: url(../img/showcases/breeze/footer.svg);
+}
+
+@media screen and (max-width: 1100px) {
+  .challenge_1:before {
+    background: #C067F6;
+  }
+  .challenge_2:before {
+    background: #B164F3;
+  }
+  .challenge_3:before {
+    background: #5E53E0;
+  }
+  .challenge_4:before {
+    background: #6153E1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .breeze__page .footer {
+    background-image: url(../img/showcases/breeze/footer_mob.svg);
+  }
+}
+@media screen and (max-width: 560px) {
+  .breeze__page .section__hero {
+    background-image: url(../img/showcases/breeze/hero_mob.jpg);
+  }
+}

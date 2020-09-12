@@ -1,0 +1,230 @@
+/*---------- header ----------*/
+.waites__page .header.scrolled .header__block_logo:before {
+  background: linear-gradient(94.95deg, #E1B118 0%, #D40619 103.53%);
+}
+.waites__page .header__menu_line {
+  background: linear-gradient(147.42deg, #e3bafc 10.26%, #f1d28a 115.14%);
+}
+
+.waites__page .btn {
+  background: #4A4A4A;
+}
+.waites__page .btn:hover {
+  background: #fff;
+  color: #4A4A4A;
+}
+
+/*---------- hero ----------*/
+.waites__page .section__hero {
+  background-image: url(../img/showcases/waites/hero.jpg);
+}
+.showcase.waites__page .hero__lines {
+  background-image: url(../img/showcases/waites/hero_lines.svg);
+}
+
+/*---------- section__summary ----------*/
+.waites__page .summary__block-info a { 
+  background: #4A4A4A;
+}
+.waites__page .summary__block-info a:hover {
+  background: linear-gradient(94.95deg, #D40619 0%, #E1B118 103.53%);
+}
+/*---------- section__comment ----------*/
+.section__comment {
+  background: linear-gradient(227.51deg, #E1B118 -3.62%, #D40619 92.18%);
+}
+.waites__page .comment__lines {
+  background-image: url(../img/showcases/waites/comment_lines.svg);
+}
+
+/*---------- section__goals ----------*/
+.goals__block-project h3:after,
+.goals__block-project h3:before,
+.goals__block-project .goal:last-child:before { 
+  background: #FFBC31;
+}
+.goals__block-project .goal {
+  border-right: 1px solid #FFBC31;
+  padding-bottom: 40px;
+}
+.goals__block-business .goal {
+  padding-bottom: 125px;
+}
+.goals__block-business .goal_2:after {
+  top: 15px;
+}
+.goals__block-business .goal_3:after {
+  top: -3px;
+}
+.goals__block-project .goal:after {
+  content: url(../img/showcases/waites/goal.svg);
+  right: -15px;
+}
+
+/*---------- section__challenges ----------*/
+.challenge_1 {
+  top: 415px;
+  left: calc(50% - 540px);
+}
+.challenge_2 {
+  top: 352px;
+  right: calc(50% - 536px);
+}
+.challenge_3 {
+  top: 242px;
+  left: calc(50% - 500px);
+}
+.challenge_4 {
+  top: 210px;
+  right: calc(50% - 408px);
+}
+.challenge_5 {
+  top: 124px;
+  left: calc(50% - 380px);
+}
+
+/*---------- section__approach ----------*/
+.section__approach .showcase__title {
+  margin-bottom: 112px;
+}
+.title__line-approach {
+  background: #DB6518;
+}
+.approach__steps {
+  margin-left: -90px;
+  margin-bottom: 40px;
+}
+.step_1 {
+  left: 8%;
+  bottom: -9%;
+  align-items: flex-end;
+  text-align: left;
+}
+.step_1:before {
+  content: url(../img/showcases/step_1.svg);
+  margin-right: 18px;
+}
+.step_2 {
+  top: -21.9%;
+  left: -7%;
+  align-items: flex-start;
+  text-align: right;
+}
+.step_2:after {
+  content: url(../img/showcases/step_2.svg);
+  margin-left: -28px;
+}
+.step_3 {
+  top: -27.5%;
+  left: 39%;
+  align-items: flex-start;
+  text-align: left;
+}
+.step_3:before {
+  content: url(../img/showcases/step_3.svg);
+  margin-right: -20px;
+}
+.step_4 {
+  left: 57.7%;
+  bottom: -10.5%;
+  align-items: flex-end;
+  text-align: left;
+}
+.step_4:before {
+  content: url(../img/showcases/waites/step_4.svg);
+  margin-right: -30px;
+}
+.step_5 {
+  top: -7.5%;
+  left: 80%;
+  align-items: flex-start;
+  text-align: left;
+}
+.step_5:before {
+  content: url(../img/showcases/waites/step_5.svg);
+  margin-right: -10px;
+  margin-top: 14px;
+}
+
+/*---------- section__board ----------*/
+.section__updated .section__container_img {
+  background-image: url(../img/showcases/waites/updated.jpg);
+}
+.section__updated .section__container_text {
+  margin-top: 150px;
+}
+
+.section__alarms .section__container_img {
+  background-image: url(../img/showcases/waites/alarms.jpg);
+}
+.section__alarms .section__container_text {
+  margin-top: 185px;
+}
+
+.section__equipment .section__container_img {
+  background-image: url(../img/showcases/waites/equipment.jpg);
+}
+.section__equipment .section__container_text {
+  margin-top: 190px;
+}
+
+.section__system .section__container_img {
+  background-image: url(../img/showcases/waites/system.jpg);
+}
+.section__system .section__container_text {
+  margin-top: 170px;
+}
+
+/*---------- section__results ----------*/
+.results__block-final h3 {
+  color: #FFBC31;
+}
+
+/*---------- scrollup ----------*/
+.waites__page .scrollup {
+  background: url(../img/showcases/waites/arrowup.svg) no-repeat center;
+}
+
+/*---------- footer ----------*/
+.waites__page .footer {
+  background-image: url(../img/showcases/waites/footer.svg);
+}
+
+@media screen and (max-width: 1100px) {
+  .challenge_1:before {
+    background: #F9AC58;
+  }
+  .challenge_2:before {
+    background: #F7A255;
+  }
+  .challenge_3:before {
+    background: #F2844D;
+  }
+  .challenge_4:before {
+    background: #F07B4A;
+  }
+  .challenge_5:before {
+    background: #EA5A54;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .section__system .img__block.img__lines {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .waites__page .footer {
+    background-image: url(../img/showcases/waites/footer_mob.svg);
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .waites__page .section__hero {
+    background-image: url(../img/showcases/waites/hero_mob.jpg);
+  }
+  .showcase.waites__page .hero__lines {
+    background-image: url(../img/showcases/waites/hero_lines_mob.svg);
+  }
+}

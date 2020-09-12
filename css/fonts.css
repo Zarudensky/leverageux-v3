@@ -1,0 +1,54 @@
+@font-face{
+font-family: 'Ekibastuz';
+src: url('../fonts/ekibastuz_regular.eot');
+src: url('../fonts/ekibastuz_regular.eot?iefix') format('eot'),
+url('../fonts/ekibastuz_regular.woff') format('woff'),
+url('../fonts/ekibastuz_regular.ttf') format('truetype'),
+url('../fonts/ekibastuz_regular.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'Ekibastuz';
+src: url('../fonts/ekibastuz_light.eot');
+src: url('../fonts/ekibastuz_light?iefix') format('eot'),
+url('../fonts/ekibastuz_light.woff') format('woff'),
+url('../fonts/ekibastuz_light.ttf') format('truetype'),
+url('../fonts/ekibastuz_light.svg#webfont') format('svg');
+font-weight: lighter;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'Ekibastuz';
+src: url('../fonts/ekibastuz_bold.eot');
+src: url('../fonts/ekibastuz_bold.eot?iefix') format('eot'),
+url('../fonts/ekibastuz_bold.woff') format('woff'),
+url('../fonts/ekibastuz_bold.ttf') format('truetype'),
+url('../fonts/ekibastuz_bold.svg#webfont') format('svg');
+font-weight: bold;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'EkibastuzBlack';
+src: url('../fonts/ekibastuz_black.eot');
+src: url('../fonts/ekibastuz_black.eot?iefix') format('eot'),
+url('../fonts/ekibastuz_black.woff') format('woff'),
+url('../fonts/ekibastuz_black.ttf') format('truetype'),
+url('../fonts/ekibastuz_black.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'EkibastuzBlack';
+src: url('../fonts/ekibastuz_heavy.eot');
+src: url('../fonts/ekibastuz_heavy.eot?iefix') format('eot'),
+url('../fonts/ekibastuz_heavy.woff') format('woff'),
+url('../fonts/ekibastuz_heavy.ttf') format('truetype'),
+url('../fonts/ekibastuz_heavy.svg#webfont') format('svg');
+font-weight: bold;
+font-style: normal;
+}

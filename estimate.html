@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang=ru>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#f9f9f9">
+		<meta name="description" content="Estimate">
+
+		<link rel="icon" href="favicon.ico" type="img/favicon.ico" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="css/estimate.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/estimate.js"></script>
+    
+		<title>Estimate</title>
+	</head>
+	<body class="estimate__page">
+		<header class="header animated">
+			<div class="header__container">
+			<div class="header__block header__block_logo">
+				<a class="header__logo animated" href="./">Leverage<span>UX</span></a>
+				<a id="btn_ep" href="./estimate.html" class="btn header__btn_ep">Estimate Project</a>
+				<div id="btn_om" class="header__btn_om">
+					<span></span><span></span><span></span>
+				</div>
+			</div>
+			<div class="header__block header__block_menu">
+    		<nav id="menu" class="header__menu">
+    			<div class="menu__btn_back">
+    				<svg class="btn__back" width="32" height="20" viewBox="0 0 32 20" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.38527 8.61473H27.2708L21.0941 2.43768C20.553 1.89688 20.553 1.01961 21.0941 0.478895C21.6352 -0.0622196 22.5125 -0.0622196 23.0528 0.478895L31.5942 9.02041C32.1353 9.56121 32.1353 10.4386 31.5942 10.9792L23.0528 19.5211C22.7823 19.7917 22.4279 19.9269 22.0735 19.9269C21.7191 19.9269 21.3646 19.7917 21.0941 19.5211C20.553 18.9803 20.553 18.103 21.0941 17.5624L27.2708 11.385H1.38527C0.620314 11.385 0 10.7648 0 9.99984C0 9.23489 0.620234 8.61473 1.38527 8.61473Z"/>
+					</svg>
+    			</div>
+  				<div class="header__menu_link">
+    				<img class="menu__link_img" src="./img/port.svg" alt="portfolio">
+    				<a href="./portfolio.html">Portfolio</a>
+    				<div class="link__line"></div>
+    			</div>
+    			<div class="header__menu_link">
+    				<img class="menu__link_img" src="./img/des.svg" alt="design">
+    				<a href="./design-process.html">Design Process</a>
+    				<div class="link__line"></div>
+    			</div>
+    			<div class="header__menu_link">
+    				<img class="menu__link_img" src="./img/pric.svg" alt="pricing">
+    				<a href="./pricing.html">Pricing</a>
+    				<div class="link__line"></div>
+    			</div>
+    			<div class="header__menu_link">
+    				<img class="menu__link_img" src="./img/about.svg" alt="about">
+    				<a href="./about.html">About</a>
+    				<div class="link__line"></div>
+    			</div>
+    			<div class="header__menu_line"></div>
+    		</nav>
+  		</div>
+  		<div class="header__block header__block_btn">
+  			<a class="btn__back_home" href="./">
+    			<svg class="back__home_svg" width="32" height="20" viewBox="0 0 32 20" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1.38527 8.61473H27.2708L21.0941 2.43768C20.553 1.89688 20.553 1.01961 21.0941 0.478895C21.6352 -0.0622196 22.5125 -0.0622196 23.0528 0.478895L31.5942 9.02041C32.1353 9.56121 32.1353 10.4386 31.5942 10.9792L23.0528 19.5211C22.7823 19.7917 22.4279 19.9269 22.0735 19.9269C21.7191 19.9269 21.3646 19.7917 21.0941 19.5211C20.553 18.9803 20.553 18.103 21.0941 17.5624L27.2708 11.385H1.38527C0.620314 11.385 0 10.7648 0 9.99984C0 9.23489 0.620234 8.61473 1.38527 8.61473Z"/>
+					</svg>
+					<span class="back__home_txt">Back to Homepage</span>
+				</a>
+			</div>
+  		<div class="menu__back"></div>
+		</header>
+		<main class="content">
+			<div class="content__section section__hero">
+				<h1 class="hero__title">Get an estimate</h1>
+				<p class="hero__descr">Fill out this simple form. Our team will contact you promptly to discuss next steps.</p>
+				<div class="hero__lines"></div>
+			</div>
+				
+			<div class="estimate__container">
+				<div class="estimate__form">
+					<div class="estimate__form_block main__form">
+						<div class="main__form_block main__form__checkboxes main__block_first">
+							<div class="main__block_namber">
+								<img class="namber__block_img" src="./img/estimate/1.svg" alt="1">
+								<p class="namber__block_txt">What is<br> the device of<br> your project?</p>
+							</div>
+							<div class="main__block_checkbox">
+								<label class="checkbox__block device">
+									<img class="checkbox__block_img" src="./img/estimate/desktop.svg" alt="desktop">
+									<p class="checkbox__block_name">Desktop</p>
+									<input id="desktop" class="checkbox" type="checkbox" name="device" value="Desktop"/>
+									<span class="checkbox__check"></span>
+								</label>
+								<div class="line__block"></div>
+								<label class="checkbox__block device">
+									<img class="checkbox__block_img" src="./img/estimate/mobile.svg" alt="mobile">
+									<p class="checkbox__block_name">Mobile</p>
+									<input id="mobile" class="checkbox" type="checkbox" name="device" value="Mobile"/>
+									<span class="checkbox__check"></span>
+								</label>
+								<div class="line__block"></div>
+								<label class="checkbox__block device">
+									<img class="checkbox__block_img" src="./img/estimate/other.svg" alt="other">
+									<p class="checkbox__block_name">Other</p>
+									<input id="other" class="checkbox" type="checkbox" name="device" value="Other"/>
+									<span class="checkbox__check"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="main__form_block main__form__checkboxes main__block_second">
+							<div class="main__block_namber">
+								<img class="namber__block_img" src="./img/estimate/2.svg" alt="2">
+								<p class="namber__block_txt">What is<br>the scope of<br>your project?</p>
+							</div>
+							<div class="main__block_checkbox">
+								<label class="checkbox__block scope">
+									<img class="checkbox__block_img" src="./img/estimate/design.svg" alt="design">
+									<p class="checkbox__block_name">Design</p>
+									<input id="design" class="checkbox" type="checkbox" name="scope" value="Design"/>
+									<span class="checkbox__check"></span>
+								</label>
+								<div class="line__block"></div>
+								<label class="checkbox__block scope">
+									<img class="checkbox__block_img" src="./img/estimate/frontend.svg" alt="frontend">
+									<p class="checkbox__block_name">Front-End</p>
+									<input id="frontEnd" class="checkbox" type="checkbox" name="scope" value="Front-End"/>
+									<span class="checkbox__check"></span>
+								</label>
+								<div class="line__block"></div>
+								<label class="checkbox__block scope">
+									<img class="checkbox__block_img" src="./img/estimate/backend.svg" alt="other">
+									<p class="checkbox__block_name">Back-End</p>
+									<input id="backEnd" class="checkbox" type="checkbox" name="scope" value="Back-End"/>
+									<span class="checkbox__check"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="main__form_block main__form__inputs main__block_third">
+							<div class="main__block_namber">
+								<img class="namber__block_img" src="./img/estimate/3.svg" alt="3">
+								<p class="namber__block_txt">Fill the form<br>and get an<br>estimate</p>
+							</div>
+							<div class="main__block_inputs">
+								<input class="main__input main__input-name validation focus" id="firstName" name="firstName" type="text" placeholder="First Name"/>
+								<div class="validation__text validation__text-inputs">
+									<img src="./img/estimate/invalid.svg" alt="invalid">
+									<span class="valid__text valid__text-name">please enter first name</span>
+								</div>
+								<input class="main__input main__input-sername validation focus" id="lastName" name="lastName" type="text" placeholder="Last Name"/>
+								<div class="validation__text validation__text-inputs">
+									<img src="./img/estimate/invalid.svg" alt="invalid">
+									<span class="valid__text valid__text-sername">please enter last name</span>
+								</div>
+								<input class="main__input main__input-email validation focus" id="email" name="email" type="email" placeholder="Email">
+								<div class="validation__text validation__text-inputs">
+									<img src="./img/estimate/invalid.svg" alt="invalid">
+									<span class="valid__text valid__text-email">please enter email</span>
+									<span class="valid__text valid__text-email_correct">please enter the correct email</span>
+								</div>
+								<input class="main__input main__input-phone validation focus" id="phone" name="phone" type="tel" placeholder="Phone Number"/>
+								<div class="validation__text validation__text-inputs">
+									<img src="./img/estimate/invalid.svg" alt="invalid">
+									<span class="valid__text valid__text-phone">please enter phone number</span>
+									<span class="valid__text valid__text-phone_correct">please enter the correct phone number</span>
+								</div>
+								<div class="validation__text validation__text-inputs">
+									<img src="./img/estimate/invalid.svg" alt="invalid">
+									<span class="valid__text valid__text-all">please fill these fields</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="estimate__form_block secondary__form">
+						<p class="secondary__form_mailink">Need NDA first? E-mail us at <a href="mailto:hello@leverageux.com">hello@Leverageux.com</a></p>
+						<textarea id="descrEstimate" name="description" class="secondary__form_text validation focus" placeholder="Short Description Of Your Idea"></textarea>
+						<div class="validation__text validation__text-description"><img src="./img/estimate/invalid.svg" alt="invalid">please fill Description field</div>
+						<p class="secondary__form_description">LeverageUX is committed to processing the above information in order to contact you and talk about your project. Other information is used for statistical purposes and, from time to time, we would like to contact you about our other products and services, as well as other content that may be of interest to you. If you consent to contact you for this purposes, please tick below:</p>
+						<div class="secondary__form_radio">
+							<label class="radio__block" id="project">
+								<input class="secondary__radio" type="checkbox" name="checkbox" value="project">
+								<span class="radio__check radio__check-project"></span>
+								<p class="secondary__radio_name agree__project">I agree to talk about my project with LeverageUX.</p>
+							</label>
+							<label class="radio__block" id="communications">
+								<input class="secondary__radio" type="checkbox" name="checkbox" value="communications">
+								<span class="radio__check radio__check-communications"></span>
+								<p class="secondary__radio_name agree__communications">I agree to receive other communications from LeverageUX.</p>
+							</label>
+							<div class="validation__text validation__text-radio"><img src="./img/estimate/invalid.svg" alt="invalid">please choose an agreement type</div>
+						</div>
+
+						<p class="secondary__form_description">You can unsubscribe from these communications at any time. For more information on how to unsubscribe, our privacy practices please view our Privacy Policy.</p>
+						<button class="btn btn__estimate" id="formBtnEstimate">Estimate Project</button>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="lines__block footer__lines"></div>
+			<div class="footer__block footer__block_first">
+				<h3 class="footer__title">Ready to discuss and estimate your project?</h3>
+				<a href="./estimate.html" id="btn_fr" class="btn footer__btn">Let's do it</a>
+				<p id="popOp" class="footer__link">Not yet, I want to get more details before</p>
+			</div>
+			<div class="footer__block footer__block_second">
+				<div class="footer__block_logo">
+					<div class="footer__line footer__line_left"></div>
+					<a class="footer__logo" href="./">Leverage<span>UX</span></a>
+					<div class="footer__line footer__line_right"></div>
+				</div>
+				<div class="footer__contacts">
+					<div class="contacts__block">
+						<p>Simirenko 5, 03134, <br>Kyiv, Ukraine</p>
+					</div>
+					<div class="contacts__block">
+						<p>Sepapaja 6, 15551, <br>Tallinn, Estonia</p>
+					</div>
+					<div class="contacts__block">
+						<p>Palpa 2350, 7223, <br>Buenos Aires, Argentina</p>
+					</div>
+					<div class="contacts__block">
+						<a class="contacts__phone" href="tel:+380934409982">+38 (093) 440-9982</a>
+						<a class="contacts__email" href="mailto:hello@leverageux.com">Hello@LeverageUX.Com</a>
+					</div>
+				</div>
+			</div>
+			<div id="regModal" class="modal">
+				<div class="modal-content">
+					<span class="close">
+						<svg xml:space="preserve" enable-background="new 0 0 15 15" height="15px" id="cross" version="1.1" viewBox="0 0 15 15" width="15px" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+							<path d="M5.792,7.499L0,0.707l0.708-0.706L7.497,5.79L7.5,5.793L14.293,0L15,0.707L9.207,7.5l0.001,0.001L15,14.293
+							l-0.708,0.706L7.503,9.21L7.5,9.207L0.707,15L0,14.293L5.792,7.499L5.792,7.499z"/>
+						</svg>
+					</span>
+					<div class="form">
+						<div class="form__block">
+							<input type="text" class="validation validation__footer-form" id="nameFooter" name="user_name" placeholder="Name" autofocus>
+							<input type="email" class="validation validation__footer-form validation__footer-email" id="emailFooter" name="email" placeholder="Email">
+							<textarea class="validation validation__textarea validation__footer-form" id="descrFooter" name="description" placeholder="Give us a short description of the info you want us to provide. Thanks!"></textarea>
+							<div class="validation__text validation__text-footer">
+								<img src="./img/estimate/invalid.svg" alt="invalid">
+								<span class="valid__text valid__text-all_forms">please fill these fields</span>
+							</div>
+							<button class="btn btn_send" id="formBtnFooter">Let's do it</button>
+						</div>
+						<div class="send__message">Thanks, your letter sent.</div>
+						<div class="notsend__message">Sorry, your letter not sent.</div>
+					</div>
+				</div>
+				<div class="modal__back"></div>
+			</div>
+		</footer>
+		<a href="#" class="scrollup"></span></a>
+	</body>
+	
+</html>

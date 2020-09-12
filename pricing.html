@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang=ru>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#f9f9f9">
+		<meta name="description" content="Pricing">
+
+		<link rel="icon" href="favicon.ico" type="img/favicon.ico" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" href="css/pricing.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/pricing.js"></script>
+
+		<title>Pricing</title>
+	</head>
+	<body class="pricing__page">
+		<header class="header animated">
+			<div class="header__container">
+				<div class="header__block header__block_logo">
+					<a class="header__logo animated" href="./">Leverage<span>UX</span></a>
+					<a id="btn_ep" href="./estimate.html" class="btn header__btn_ep">Estimate Project</a>
+					<div id="btn_om" class="header__btn_om">
+						<span></span><span></span><span></span>
+					</div>
+				</div>
+				<div class="header__block header__block_menu">
+	    		<nav id="menu" class="header__menu">
+	    			<div class="menu__btn_back">
+	    				<svg class="btn__back" width="32" height="20" viewBox="0 0 32 20" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1.38527 8.61473H27.2708L21.0941 2.43768C20.553 1.89688 20.553 1.01961 21.0941 0.478895C21.6352 -0.0622196 22.5125 -0.0622196 23.0528 0.478895L31.5942 9.02041C32.1353 9.56121 32.1353 10.4386 31.5942 10.9792L23.0528 19.5211C22.7823 19.7917 22.4279 19.9269 22.0735 19.9269C21.7191 19.9269 21.3646 19.7917 21.0941 19.5211C20.553 18.9803 20.553 18.103 21.0941 17.5624L27.2708 11.385H1.38527C0.620314 11.385 0 10.7648 0 9.99984C0 9.23489 0.620234 8.61473 1.38527 8.61473Z"/>
+						</svg>
+	    			</div>
+	  				<div class="header__menu_link">
+	    				<img class="menu__link_img" src="./img/port.svg" alt="portfolio">
+	    				<a href="./portfolio.html">Portfolio</a>
+	    				<div class="link__line"></div>
+	    			</div>
+	    			<div class="header__menu_link">
+	    				<img class="menu__link_img" src="./img/des.svg" alt="design">
+	    				<a href="./design-process.html">Design Process</a>
+	    				<div class="link__line"></div>
+	    			</div>
+	    			<div class="header__menu_link active">
+	    				<img class="menu__link_img" src="./img/pric.svg" alt="pricing">
+	    				<a href="./pricing.html">Pricing</a>
+	    				<div class="link__line active"></div>
+	    			</div>
+	    			<div class="header__menu_link">
+	    				<img class="menu__link_img" src="./img/about.svg" alt="about">
+	    				<a href="./about.html">About</a>
+	    				<div class="link__line"></div>
+	    			</div>
+	    			<div class="header__menu_line"></div>
+	    		</nav>
+	  		</div>
+	  		<div class="menu__back"></div>
+  		</div>
+		</header>
+		<main class="content">
+			<section class="content__section section__hero">
+				<h1 class="hero__title">Pricing</h1>
+				<p class="hero__descr">At LeverageUX, we have different collaboration options to make the<br> initial phase more flexible for you. And Our Design Packs will<br> Help you to make the decision easier without any extra questions.</p>
+				<div class="hero__lines"></div>
+			</section>
+
+			<section class="content__section section__ways">
+				<h2 class="ways__title">Collaboration Options</h2>
+				<div class="ways__container">
+					<div class="ways__block retainer">
+						<h3 class="ways__block-title">Retainer</h3>
+						<p class="ways__block-descr">
+							The most convenient way for a long-term<br> partnership or longterm project. Only using the<br> retainer basis, we can guarantee that you<br> definitely have a designer or design team for a<br> defined number of hours each week during all the<br> time of our collaboration.
+						</p>
+					</div>
+					<div class="ways__block fpp">
+						<h3 class="ways__block-title">Fixed-Price Projects</h3>
+						<p class="ways__block-descr">
+							This way of collaboration is beneficial and<br> possible if you have a good understanding<br> of what you want and the exact detailed<br> requirements for your project. But if the<br> project is quite big, we would recommend<br> choosing a retainer.
+						</p>
+					</div>
+					<div class="ways__block basis">
+						<h3 class="ways__block-title">Hourly Basis</h3>
+						<p class="ways__block-descr">
+							This approach is good if you want to work on<br> a project on an ongoing basis, want to define<br> and improve the things on the go. The main<br> difference between this and the retainer is the<br> scheduled designer's time. 
+						</p>
+					</div>
+				</div>
+				<!-- <div class="ways__lines"></div> -->
+			</section>
+
+			<section class="content__section section__plans">
+				<h2 class="section__plans_title">Design Packs</h2>
+				<div class="title__line"></div>
+				<ul class="radio__switch">
+				  <li class="radio__switch-item">
+				    <input class="radio__switch-input" type="radio" name="radioButton" id="radio1" checked>
+				    <label class="radio__switch-label label1" for="radio1"><span class="rsl__txt-mob">Mobile</span></label>
+				  </li>
+				  <li class="radio__switch-item">
+				    <input class="radio__switch-input" type="radio" name="radioButton" id="radio2">
+				    <label class="radio__switch-label label2" for="radio2"><span class="rsl__txt-desk">Desktop</span></label>
+				    <div aria-hidden="true" class="radio__switch-marker"></div>
+				  </li>
+				</ul>
+				<div class="plans mobile__price">
+					<div class="titles">
+						<h6>Number of Screens</h6>
+						<h6 class="delete_for_desktop">App Layout</h6>
+						<h6>Business Requirements Review</h6>
+						<h6>Competitor Research</h6>
+						<h6>User Flow Based <br>on the User Scenarios</h6>
+						<h6>Wireframes</h6>
+						<h6 class="delete_for_desktop">App Design Style <br>(Overall Look and Feel, Colors, Typography, Iconography)</h6>
+						<h6 class="delete_for_moble">Visual Identity <br>(Overall Look and Feel, Colors, Typography, Iconography)</h6>
+						<h6>Number of Revisions</h6>
+						<h6 class="delete_for_moble">Responsive Design</h6>
+						<h6>Interactions Design</h6>
+						<h6>Style Guide</h6>
+						<h6>Clickable Prototype</h6>
+						<h6>Development Support</h6>
+					</div>
+					<div class="plan__blocks">
+						<div class="plan__block concept">
+							<h5 class="plan__block_title mobile">Mobile Concept</h5>
+							<h5 class="plan__block_title desktop">Desktop Concept</h5>
+							<p class="plan__block_price mobile">$3790</p>
+							<p class="plan__block_price desktop">$5790</p>
+							<div class="plan__block_time mobile">4-5 weeks</div>
+							<div class="plan__block_time desktop">6-8 weeks</div>
+							<p class="plan__block_descr">If you already have the idea and<br>want to make a basic design to<br>share the concept with your<br>partners or to pitch it to investor,<br>this pack is ideal for you</p>
+							<div class="plan__block_info plan__info_first">
+								<h6 class="info__title">Number of Screens</h6>
+								<p class="info__descr">Up to 10</p>
+							</div>
+							<div class="plan__block_info delete_for_desktop">
+								<h6 class="info__title">App Layout</h6>
+								<p class="info__descr mobile">iOS or Android</p>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Business Requirements<br>Review</h6>
+								<div class="info__check check"></div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Competitor Research</h6>
+								<div class="info__check check"></div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">User Flow Based on <br>the User Scenarios</h6>
+								<div class="info__check none"></div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Wireframes</h6>
+								<div class="info__check none"></div>
+							</div>
+							<div class="plan__block_info delete_for_desktop">
+								<h6 class="info__title">App Design Style</h6>
+								<p class="info__descr">2 Different Styles</p>
+							</div>
+							<div class="plan__block_info delete_for_moble">
+								<h6 class="info__title">Visual Identity</h6>
+								<p class="info__descr">2 Different Styles</p>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Number of Revisions</h6>
+								<p class="info__descr">2</p>
+							</div>
+							<div class="plan__block_info delete_for_moble">
+								<h6 class="info__title">Responsive Design</h6>
+								<div class="info__check none"></div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Interactions Design</h6>
+								<div class="info__check check"></div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Style Guide</h6>
+								<div class="info__check none"></div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Clickable Prototype</h6>
+								<div class="info__check check"></div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Development Support</h6>
+								<div class="info__check none"></div>
+							</div>
+							<button class="btn btn__buy btn__concept" type="submit">Buy Now</button>
+						</div>
+						<div class="plan__block startup">
+							<h5 class="plan__block_title mobile">Mobile Startup MVP</h5>
+							<h5 class="plan__block_title desktop">Desktop Startup MVP</h5>
+							<p class="plan__block_price mobile">$7790</p>
+							<p class="plan__block_price desktop">$12790</p>
+							<div class="plan__block_time mobile">8-10 weeks</div>
+							<div class="plan__block_time desktop">12-14 weeks</div>
+							<p class="plan__block_descr">If you want to get to the market<br>quickly, effectively and on budget,<br>this pack is for you</p>
+							<div class="plan__block_info plan__info_first">
+								<h6 class="info__title">Number of Screens</h6>
+								<p class="info__descr mobile">Up to 30</p>
+								<p class="info__descr desktop">Up to 25</p>
+							</div>
+							<div class="plan__block_info delete_for_desktop">
+								<h6 class="info__title">App Layout</h6>
+								<p class="info__descr">iOS or Android</p>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Business Requirements<br>Review</h6>
+								<div class="info__check check"></div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Competitor Research</h6>
+								<div class="info__check check"></div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">User Flow Based on <br>the User Scenarios</h6>
+								<div class="info__check check"></div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title check">Wireframes</h6>
+								<div class="info__check none mobile"></div>
+								<div class="info__check check desktop"></div>
+							</div>
+							<div class="plan__block_info delete_for_desktop">
+								<h6 class="info__title">App Design Style</h6>
+								<p class="info__descr">2 Different Styles</p>
+							</div>
+							<div class="plan__block_info delete_for_moble">
+								<h6 class="info__title">Visual Identity</h6>
+								<p class="info__descr">2 Different Styles</p>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Number of Revisions</h6>
+								<p class="info__descr">2</p>
+							</div>
+							<div class="plan__block_info delete_for_moble">
+								<h6 class="info__title">Responsive Design</h6>
+								<div class="info__check check"></div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Interactions Design</h6>
+								<div class="info__check check"></div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Style Guide</h6>
+								<div class="info__check check"></div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Clickable Prototype</h6>
+								<div class="info__check check"></div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Development Support</h6>
+								<div class="info__check text desktop">8 Weeks</div>
+								<div class="info__check text mobile">5 Weeks</div>
+							</div>
+							<button class="btn btn__buy btn__startup" type="submit">Buy Now</button>
+						</div>
+						<div class="plan__block business">
+							<h5 class="plan__block_title mobile">Mobile Business</h5>
+							<h5 class="plan__block_title desktop">Desktop Business</h5>
+							<p class="plan__block_price">Let's talk</p>
+							<div class="plan__block_time">Custom</div>
+							<p class="plan__block_descr">Want a custom solution that will<br>help attract more customers and<br>increase revenue? Book a free call<br>with us and get full clarity on<br>timing and budget for your project.</p>
+							<div class="plan__block_info plan__info_first">
+								<h6 class="info__title">Number of screens</h6>
+								<div class="info__check text">optional</div>
+							</div>
+							<div class="plan__block_info delete_for_desktop">
+								<h6 class="info__title">App Layout</h6>
+								<div class="info__check text">Optional</div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Business Requirements<br>Review</h6>
+								<div class="info__check check"></div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Competitor Research</h6>
+								<div class="info__check check"></div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">User Flow Based on <br>the User Scenarios</h6>
+								<div class="info__check text">Optional</div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title check">Wireframes</h6>
+								<div class="info__check check desktop"></div>
+								<div class="info__check text mobile">Optional</div>
+							</div>
+							<div class="plan__block_info delete_for_desktop">
+								<h6 class="info__title">App Design Style</h6>
+								<div class="info__check text">Optional</div>
+							</div>
+							<div class="plan__block_info delete_for_moble">
+								<h6 class="info__title">Visual Identity</h6>
+								<div class="info__check text">Optional</div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Number of Revisions</h6>
+								<div class="info__check text">Optional</div>
+							</div>
+							<div class="plan__block_info delete_for_moble">
+								<h6 class="info__title">Responsive Design</h6>
+								<div class="info__check text">Optional</div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Interactions Design</h6>
+								<div class="info__check check"></div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Style Guide</h6>
+								<div class="info__check text mobile">Optional</div>
+								<div class="info__check check desktop"></div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Clickable Prototype</h6>
+								<div class="info__check text">Optional</div>
+							</div>
+							<div class="plan__block_info">
+								<h6 class="info__title">Development Support</h6>
+								<div class="info__check text">Optional</div>
+							</div>
+							<button class="btn btn__buy btn__business" type="submit">Buy Now</button>
+						</div>
+					</div>
+					<!-- <div class="plan__lines"></div> -->
+					<div id="buyModal" class="modal">
+						<div class="modal-content">
+							<span class="close">
+								<svg xml:space="preserve" enable-background="new 0 0 15 15" height="15px" id="cross" version="1.1" viewBox="0 0 15 15" width="15px" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+									<path d="M5.792,7.499L0,0.707l0.708-0.706L7.497,5.79L7.5,5.793L14.293,0L15,0.707L9.207,7.5l0.001,0.001L15,14.293
+									l-0.708,0.706L7.503,9.21L7.5,9.207L0.707,15L0,14.293L5.792,7.499L5.792,7.499z"/>
+								</svg>
+							</span>
+							<div class="form">
+								<div class="form__block">
+									<input type="text" id="plan" name="plan">
+									<input type="text" class="validation validation__plan-form" id="nameBuy" name="user_name" placeholder="Name" autofocus>
+									<input type="email" class="validation validation__plan-form validation__plan-email" id="emailBuy" name="email" placeholder="Email">
+									<textarea class="validation validation__textarea validation__plan-form" id="descrBuy" name="description" placeholder="Give us a short description of the info you want us to provide. Thanks"></textarea>
+									<div class="validation__text validation__text-plan">
+										<img src="./img/estimate/invalid.svg" alt="invalid">
+										<span class="valid__text valid__text-all_forms">please fill these fields</span>
+									</div>
+									<button class="btn btn_send" id="formBtnBuy">Buy Now</button>
+								</div>
+								<div class="send__message">Thanks, your letter sent.</div>
+								<div class="notsend__message">Sorry, your letter not sent.</div>
+							</div>
+						</div>
+						<div class="modal__back"></div>
+					</div>
+				</div>
+				<h2 class="section__plans_title addons__title">Addons</h2>
+				<div class="addons mobile__price">
+					<div class="addons__block titles">
+						<h6>Custom Illustration</h6>
+						<h6 class="delete_for_desktop">Store Marketing Graphics<br>for Mobile Apps</h6>
+						<h6>Clickable Prototype <br>(Up to 15 screens)</h6>
+						<h6>UX Product Audit</h6>
+						<h6>Landing Page Design</h6>
+						<h6 class="mobile__title">Simple Product Website Design <span>(e.g. Homepage, Blog, FAQ, Pricing Page, Text Layout, Error Pages)</span></h6>
+					</div>
+					<div class="addons__block tabl">
+						<div class="tabl__block_info tabl__info_first">
+							<h6 class="tabl__info info__title">Custom Illustration</h6>
+							<p class="info__descr">$500</p>
+							<p class="info__descr">Up to 1 Week</p>
+						</div>
+						<div class="tabl__block_info delete_for_desktop">
+							<h6 class="tabl__info info__title">Store Marketing Graphics <br>for Mobile Apps</h6>
+							<p class="info__descr">$1000</p>
+							<p class="info__descr">Up to 1 Week</p>
+						</div>
+						<div class="tabl__block_info">
+							<h6 class="tabl__info info__title">Clickable Prototype <br>(Up to 15 Screens)</h6>
+							<p class="info__descr">$800</p>
+							<p class="info__descr">Up to 1 Week</p>
+						</div>
+						<div class="tabl__block_info">
+							<h6 class="tabl__info info__title">UX Product Audit</h6>
+							<p class="info__descr">$2000</p>
+							<p class="info__descr">Up to 1.5 Weeks</p>
+						</div>
+						<div class="tabl__block_info">
+							<h6 class="tabl__info info__title">Landing Page Design</h6>
+							<p class="info__descr">$2000</p>
+							<p class="info__descr">Up to 5 Weeks</p>
+						</div>
+						<div class="tabl__block_info">
+							<h6 class="tabl__info info__title">Simple Product Website Design</h6>
+							<p class="info__descr">$5000</p>
+							<p class="info__descr">Up to 10 Weeks</p>
+						</div>
+					</div>
+				</div>
+			</section>		
+		</main>
+
+		<footer class="footer">
+			<div class="lines__block footer__lines"></div>
+			<div class="footer__block footer__block_first">
+				<h3 class="footer__title">Don't know what Pack to choose?</h3>
+				<a href="./estimate.html" id="btn_fr" class="btn footer__btn">Let's do it</a>
+				<p id="popOp" class="footer__link">Let's together review your project <br class="br__mob">and we help you to find the best fit</p>
+			</div>
+			<div class="footer__block footer__block_second">
+				<div class="footer__block_logo">
+					<div class="footer__line footer__line_left"></div>
+					<a class="footer__logo" href="./">Leverage<span>UX</span></a>
+					<div class="footer__line footer__line_right"></div>
+				</div>
+				<div class="footer__contacts">
+					<div class="contacts__block">
+						<p>Simirenko 5, 03134, <br>Kyiv, Ukraine</p>
+					</div>
+					<div class="contacts__block">
+						<p>Sepapaja 6, 15551, <br>Tallinn, Estonia</p>
+					</div>
+					<div class="contacts__block">
+						<p>Palpa 2350, 7223, <br>Buenos Aires, Argentina</p>
+					</div>
+					<div class="contacts__block">
+						<a class="contacts__phone" href="tel:+380934409982">+38 (093) 440-9982</a>
+						<a class="contacts__email" href="mailto:hello@leverageux.com">Hello@LeverageUX.Com</a>
+					</div>
+				</div>
+			</div>
+			<div id="regModal" class="modal">
+				<div class="modal-content">
+					<span class="close">
+						<svg xml:space="preserve" enable-background="new 0 0 15 15" height="15px" id="cross" version="1.1" viewBox="0 0 15 15" width="15px" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+							<path d="M5.792,7.499L0,0.707l0.708-0.706L7.497,5.79L7.5,5.793L14.293,0L15,0.707L9.207,7.5l0.001,0.001L15,14.293
+							l-0.708,0.706L7.503,9.21L7.5,9.207L0.707,15L0,14.293L5.792,7.499L5.792,7.499z"/>
+						</svg>
+					</span>
+					<div class="form">
+						<div class="form__block">
+							<input type="text" class="validation validation__footer-form" id="nameFooter" name="user_name" placeholder="Name" autofocus>
+							<input type="email" class="validation validation__footer-form validation__footer-email" id="emailFooter" name="email" placeholder="Email">
+							<textarea class="validation validation__textarea validation__footer-form" id="descrFooter" name="description" placeholder="Give us a short description of the info you want us to provide. Thanks!"></textarea>
+							<div class="validation__text validation__text-footer">
+								<img src="./img/estimate/invalid.svg" alt="invalid">
+								<span class="valid__text valid__text-all_forms">please fill these fields</span>
+							</div>
+							<button class="btn btn_send" id="formBtnFooter">Let's do it</button>
+						</div>
+						<div class="send__message">Thanks, your letter sent.</div>
+						<div class="notsend__message">Sorry, your letter not sent.</div>
+					</div>
+				</div>
+				<div class="modal__back"></div>
+			</div>
+		</footer>
+		<a href="#" class="scrollup"></span></a>
+	</body>
+	
+</html>

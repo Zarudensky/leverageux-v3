@@ -1,0 +1,129 @@
+/*---------- header ----------*/
+.insight__page .header.scrolled .header__block_logo:before {
+  background: linear-gradient(94.95deg, #2BBEA4 0%, #3E04BB 103.53%);
+}
+.insight__page .header__menu_line {
+  background: linear-gradient(147.42deg, #ded0ff 10.26%, #68cdbd 115.14%);
+}
+
+.showcase.insight__page .header__btn_om:hover span,
+.showcase.insight__page .header.scrolled .header__btn_om:hover span {
+  background: #fff;
+}
+.showcase.insight__page .btn:hover {
+  color: #00A2B8;
+  background: #fff;
+}
+
+/*---------- hero ----------*/
+.insight__page .section__hero {
+  background-image: url(../img/showcases/insight/hero.jpg);
+}
+.showcase .hero__title span {
+  font-family: 'Ekibastuz';
+  font-weight: bold;
+}
+
+/*---------- section__summary ----------*/
+.insight__page .summary__block-info a:hover {
+  background: linear-gradient(94.95deg, #3E0DBA 0%, #0CBDA3 103.53%);
+}
+
+/*---------- section__comment ----------*/
+.section__comment {
+  background: linear-gradient(234.91deg, #0CBDA3 -1.74%, #3E0DBA 92.3%);
+}
+
+/*---------- section__goals ----------*/
+.goals__block-project h3:after,
+.goals__block-project h3:before,
+.goals__block-project .goal:last-child:before { 
+  background: #00C59E;
+}
+.goals__block-project .goal {
+  border-right: 1px solid #00C59E;
+  padding-bottom: 75px;
+}
+.goals__block-business .goal {
+  padding-bottom: 80px;
+}
+.goals__block-business .goal_2:after {
+  top: 2px;
+}
+.goals__block-project .goal:after {
+  content: url(../img/showcases/insight/goal.svg);
+}
+
+/*---------- section__challenges ----------*/
+.challenge_1 {
+  top: 350px;
+  left: calc(50% - 505px);
+}
+.challenge_2 {
+  top: 246px;
+  right: calc(50% - 435px);
+}
+.challenge_3 {
+  top: 113px;
+  left: calc(50% - 375px);
+}
+
+/*---------- section__approach ----------*/
+.title__line-approach {
+  background: #0095B6;
+}
+
+/*---------- section__board ----------*/
+.section__updated .section__container_img {
+  background-image: url(../img/showcases/insight/updated.jpg);
+}
+.section__updated .section__container_text {
+  margin-top: 150px;
+}
+
+.section__visual .section__container_img {
+  background-image: url(../img/showcases/insight/visual.jpg);
+}
+.section__visual .section__container_text {
+  margin-top: 110px;
+}
+
+.section__driven .section__container_img {
+  background-image: url(../img/showcases/insight/driven.jpg);
+}
+.section__driven .section__container_text {
+  margin-top: 170px;
+}
+
+/*---------- section__results ----------*/
+.results__block-final h3 {
+  color: #00B8AD;
+}
+
+/*---------- footer ----------*/
+.insight__page .footer {
+  background-image: url(../img/showcases/insight/footer.svg);
+}
+
+@media screen and (max-width: 1100px) {
+  .challenge_1:before {
+    background: #54C6DC;
+  }
+  .challenge_2:before {
+    background: #51B2DF;
+  }
+  .challenge_3:before {
+    background: #445CE8;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .insight__page .footer {
+    background-image: url(../img/showcases/insight/footer_mob.svg);
+  }
+}
+@media screen and (max-width: 560px) {
+  .insight__page .section__hero {
+    background-image: url(../img/showcases/insight/hero_mob.jpg);
+  }
+}
