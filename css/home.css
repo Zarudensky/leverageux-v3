@@ -145,9 +145,10 @@
 .section__main.animated .main__container {
   animation: blockOpacity 2.5s 1 ease;
 }
-.main__container .header__btn_ep {
+.main__container .main__btn {
   display: inline-flex;
-  margin-right: 0;
+  width: 230px;
+  height: 32px;
 }
 .main__container_title {
   font-size: 54px;
@@ -1109,7 +1110,6 @@
     margin-top: 50px;
   }
   .section__projects .section__title {
-    font-size: 18px;
     max-width: 235px;
     margin-bottom: 20px;
   }

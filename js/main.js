@@ -2,8 +2,7 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 		var wt = $(window).scrollTop();
 		var wh = $(window).height();
-		var footerBtnTop = $('#btn_fr').offset().top;
-		var footerBtnHeight = $('#btn_fr').outerHeight();
+		var footerTitleTop = $('#title_fr').offset().top;
 		var footerLogo = $('.footer__logo').offset().top + $('.footer__logo').height();
 		// fixed/no fixed heder
 		if($('#btn_mn').length) {
@@ -11,7 +10,7 @@ $(document).ready(function(){
 			var headerBtnHeight = $('#btn_mn').outerHeight();
 			if (wt >= headerBtnTop + headerBtnHeight) {
 				$('.header').addClass('scrolled');
-				if (wt + wh >= footerBtnTop) {
+				if (wt + wh >= footerTitleTop) {
 					$('.header').removeClass('scrolled');
 				} else {
 					$('.header').addClass('scrolled');
@@ -22,7 +21,7 @@ $(document).ready(function(){
 		} else { 
 			if (wt >= 15.5) {
 				$('.header').addClass('scrolled');
-				if (wt + wh >= footerBtnTop) {
+				if (wt + wh >= footerTitleTop) {
 					$('.header').removeClass('scrolled');
 				} else {
 					$('.header').addClass('scrolled');
@@ -80,23 +79,6 @@ $(document).ready(function(){
 		}
 	});
 
-	// modal form
-	var modal = $('#regModal');
-	var btn = $('#popOp');
-	$(modal).hide();
-	$(btn).click(function() {
-	  	$(modal).show();
-	});
-	$('.close, .modal__back').click(function() {
-	  	$(modal).hide();
-	  	$('.form__block').removeClass('disable');
-   		$('.send__message').removeClass('active');
-   		$('.notsend__message').removeClass('active');
-	  	$('#nameFooter').val("");
-	  	$('#emailFooter').val("");
-	  	$('#descrFooter').val("");
-	});
-
 	// send form footer and validation
 	function validation() {
 		let valid = true;
@@ -143,74 +125,20 @@ $(document).ready(function(){
 	        sendForm()
 	    }
 	});
+
 	function sendForm() {
-		var firstname = $('#nameFooter').val();
-		var email = $('#emailFooter').val();
-		var descr = $('#descrFooter').val();
+		let firstname = $('#nameFooter').val();
+		let email = $('#emailFooter').val();
+		let descr = $('#descrFooter').val();
 
-		var leadStatus = 'Interest';
-		var contactType = 'Prospect';
-		var source = 'Website';
-		var leadGeneration = 'Inbound';
+		let leadStatus = 'Interest';
+		let contactType = 'Prospect';
+		let source = 'Website';
+		let leadGeneration = 'Inbound';
 
-		var xhr = new XMLHttpRequest();
-    	var url = 'https://api.hsforms.com/submissions/v3/integration/submit/6484354/ba6957be-53f3-4cc6-877f-d0dc0d677081'
-    	// Example request JSON:
-	    var data = {
-	      "fields": [
-	        {
-	          "name": "firstname",
-	          "value": firstname
-	        },
-	        {
-	          "name": "email",
-	          "value": email
-	        },
-	        {
-	          "name": "description",
-	          "value": descr
-	        },
-	        {
-	          "name": "hs_lead_status",
-	          "value": leadStatus
-	        },
-	        {
-	          "name": "contact_type",
-	          "value": contactType
-	        },
-	        {
-	          "name": "source",
-	          "value": source
-	        },
-	        {
-	          "name": "lead_generation",
-	          "value": leadGeneration
-	        }
-	      ]
-	    }
-	    var final_data = JSON.stringify(data)
-	    xhr.open('POST', url);
-	    // Sets the value of the 'Content-Type' HTTP request headers to 'application/json'
-	    xhr.setRequestHeader('Content-Type', 'application/json');
-	    xhr.onreadystatechange = function() {
-	        if(xhr.readyState == 4 && xhr.status == 200) { 
-	            $('.form__block').addClass('disable');
-	       		$('.send__message').addClass('active');
-	        } else if (xhr.readyState == 4 && xhr.status == 400){
-	        	$('.form__block').addClass('disable');
-	        	$('.notsend__message').addClass('active');
-	        	console.log(xhr.responseText);
-	        } else if (xhr.readyState == 4 && xhr.status == 403){ 
-	            $('.form__block').addClass('disable');
-	        	$('.notsend__message').addClass('active');
-	        	console.log(xhr.responseText);        
-	        } else if (xhr.readyState == 4 && xhr.status == 404){ 
-	            $('.form__block').addClass('disable');
-	        	$('.notsend__message').addClass('active');
-	        	console.log(xhr.responseText);
-	        }
-	       } 
-	    // Sends the request	    
-	    xhr.send(final_data)
-	}
+		console.log('sendForm');
+		console.log(firstname);
+		console.log(email);
+		console.log(descr);
+	}	
 });

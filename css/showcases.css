@@ -21,8 +21,19 @@
 .showcase .header.scrolled .header__btn_om:hover span {
 	background: #4A4A4A;
 }
-
-.showcase .header__menu_link a:hover {
+.showcase .header__btn_ep {
+  border-color: #fff;
+  color: #fff;
+}
+.showcase .header.scrolled .header__btn_ep {
+  border: none;
+}
+.showcase .header.scrolled .header__btn_ep:hover {
+	color: #fff;
+	background: #00A2B8;
+}
+.showcase .header__menu_link a:hover,
+.showcase .header__btn_ep:hover {
   color: #4A4A4A;
 }
 .showcase .header__btn_om span {
