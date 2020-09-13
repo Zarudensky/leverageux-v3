@@ -127,35 +127,94 @@ $(document).ready(function(){
 	});
 
 	function sendForm() {
-		let firstname = $('#nameFooter').val();
-		let email = $('#emailFooter').val();
-		let descr = $('#descrFooter').val();
-		let feedbackModal = $('#feedbackModal');
-		let feedbackMessageSend = $('.feedback__message-send');
-		let feedbackMessageNotSend = $('.feedback__message-notsend');
+		var firstname = $('#nameFooter').val();
+		var email = $('#emailFooter').val();
+		var descr = $('#descrFooter').val();
 
-		console.log('send form');
-		console.log(firstname);
-		console.log(email);
-		console.log(descr);
-		
-		$('#nameFooter').val('');
-		$('#emailFooter').val('');
-		$('#descrFooter').val('');
-		$('.validation__text').removeClass('active');
-		console.log('clear form');
+		var feedbackModal = $('#feedbackModal');
+		var feedbackMessageSend = $('.feedback__message-send');
+		var feedbackMessageNotSend = $('.feedback__message-notsend');
 
-		$(feedbackMessageSend).show();
-		$(feedbackMessageNotSend).hide();
-		$(feedbackModal).show();
+		var leadStatus = 'Interest';
+		var contactType = 'Prospect';
+		var source = 'Website';
+		var leadGeneration = 'Inbound';
 
-		function hideModalAndMessages(){
-			$(feedbackModal).hide();
-			$(feedbackMessageNotSend).hide();
-			$(feedbackMessageSend).hide();
-			console.log('hide Modal And Messages');
+		var xhr = new XMLHttpRequest();
+		var url = 'https://api.hsforms.com/submissions/v3/integration/submit/6484354/ba6957be-53f3-4cc6-877f-d0dc0d677081'
+		// Example request JSON:
+		var data = {
+			"fields": [
+				{
+					"name": "firstname",
+					"value": firstname
+				},
+				{
+					"name": "email",
+					"value": email
+				},
+				{
+					"name": "description",
+					"value": descr
+				},
+				{
+					"name": "hs_lead_status",
+					"value": leadStatus
+				},
+				{
+					"name": "contact_type",
+					"value": contactType
+				},
+				{
+					"name": "source",
+					"value": source
+				},
+				{
+					"name": "lead_generation",
+					"value": leadGeneration
+				}
+			]
 		}
-		setTimeout(hideModalAndMessages, 3000);
+		var final_data = JSON.stringify(data)
+		xhr.open('POST', url);
+		// Sets the value of the 'Content-Type' HTTP request headers to 'application/json'
+		xhr.setRequestHeader('Content-Type', 'application/json');
+		xhr.onreadystatechange = function() {
+			$('#nameFooter').val('');
+			$('#emailFooter').val('');
+			$('#descrFooter').val('');
+			$('.validation__text').removeClass('active');
+
+			if(xhr.readyState == 4 && xhr.status == 200) { 
+				$(feedbackMessageNotSend).hide();
+				$(feedbackMessageSend).show();
+				$(feedbackModal).show();
+			} else if (xhr.readyState == 4 && xhr.status == 400){
+				$(feedbackMessageSend).hide();
+				$(feedbackMessageNotSend).show();
+				$(feedbackModal).show();
+				console.log(xhr.responseText);
+			} else if (xhr.readyState == 4 && xhr.status == 403){ 
+				$(feedbackMessageSend).hide();
+				$(feedbackMessageNotSend).show();
+				$(feedbackModal).show();
+				console.log(xhr.responseText);        
+			} else if (xhr.readyState == 4 && xhr.status == 404){ 
+				$(feedbackMessageSend).hide();
+				$(feedbackMessageNotSend).show();
+				$(feedbackModal).show();
+				console.log(xhr.responseText);
+			}
+
+			function hideModalAndMessages(){
+				$(feedbackModal).hide();
+				$(feedbackMessageNotSend).hide();
+				$(feedbackMessageSend).hide();
+			}
+			setTimeout(hideModalAndMessages, 3000);
+		} 
+		// Sends the request	    
+		xhr.send(final_data)	
 	}
 	$('.close, .modal__back').click(function() {
 		$('#feedbackModal').hide();
