@@ -16,6 +16,7 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="js/main.js"></script>
+		<script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
     
 		<title>RankBreeze</title>
 	</head>
@@ -250,12 +251,55 @@
 
 		<footer class="footer">
 			<div class="lines__block footer__lines"></div>
-			<div class="footer__block footer__block_first">
-				<h3 class="footer__title">Ready to discuss and estimate your project?</h3>
-				<a href="./estimate.html" id="btn_fr" class="btn footer__btn">Let's do it</a>
-				<p id="popOp" class="footer__link">Not yet, I want to get more details before</p>
+			<div class="footer__block footer__block_title">
+				<h3 class="footer__title">Ready to discuss your project?</h3>
 			</div>
-			<div class="footer__block footer__block_second">
+			<div class="footer__block footer__block_feedback">
+				<div class="feedback feedback__founders">
+					<div class="founder founder__first">
+						<p class="founder__location">USA</p>
+						<img class="founder__photo" src="./img/about/photo_1.png" alt="photo_1">
+						<p class="founder__name">Roman Leshchyk</p>
+						<p class="founder__position">Founder, CEO</p>
+						<a class="founder__email" href="mailto:roman@leverageux.com">Roman@LeverageUX.com </a>
+						<a class="founder__calendar" id="calendar_fr" href="https://calendly.com/leverageux/intro">Schedule a call</a>
+					</div>
+					<div class="founder founder__second">
+						<p class="founder__location">Europe, Australia</p>
+						<img class="founder__photo" src="./img/about/photo_2.png" alt="photo_2">
+						<p class="founder__name">Anton Korolik</p>
+						<p class="founder__position">Co-Founder, CBDO</p>
+						<a class="founder__email" href="mailto:anton@leverageux.com">Anton@LeverageUX.com</a>
+						<a class="founder__calendar" href="https://calendly.com/leverageux/intro">Schedule a call</a>
+					</div>
+				</div>
+				<div class="feedback feedback__form">
+					<div class="form__container">
+						<input type="text" class="validation validation__footer-form feedback__form-input" id="nameFooter" name="user_name" placeholder="Name">
+						<input type="email" class="validation validation__footer-form validation__footer-email feedback__form-input" id="emailFooter" name="email" placeholder="Email">
+						<textarea class="validation validation__footer-form validation__textarea feedback__form-descr" id="descrFooter" name="description" placeholder="Message"></textarea>
+						<div class="validation__text validation__text-footer">
+							<img src="./img/estimate/invalid.svg" alt="invalid">
+							<span class="valid__text valid__text-all_forms">please fill these fields</span>
+						</div>
+						<button class="btn btn__feedback" id="formBtnFooter">Send</button>
+					</div>
+					<div id="feedbackModal" class="modal">
+						<div class="modal-content">
+							<span class="close">
+								<svg xml:space="preserve" enable-background="new 0 0 15 15" height="15px" id="cross" version="1.1" viewBox="0 0 15 15" width="15px" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+									<path d="M5.792,7.499L0,0.707l0.708-0.706L7.497,5.79L7.5,5.793L14.293,0L15,0.707L9.207,7.5l0.001,0.001L15,14.293
+									l-0.708,0.706L7.503,9.21L7.5,9.207L0.707,15L0,14.293L5.792,7.499L5.792,7.499z"/>
+								</svg>
+							</span>
+							<div class="feedback__message-send">Thanks, your letter sent.</div>
+							<div class="feedback__message-notsend">Sorry, your letter not sent.</div>
+						</div>
+						<div class="modal__back"></div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__block footer__block_contacts">
 				<div class="footer__block_logo">
 					<div class="footer__line footer__line_left"></div>
 					<a class="footer__logo" href="./">Leverage<span>UX</span></a>
@@ -272,35 +316,11 @@
 						<p>Palpa 2350, 7223, <br>Buenos Aires, Argentina</p>
 					</div>
 					<div class="contacts__block">
-						<a class="contacts__phone" href="tel:+380934409982">+38 (093) 440-9982</a>
-						<a class="contacts__email" href="mailto:hello@leverageux.com">Hello@LeverageUX.Com</a>
-					</div>
-				</div>
-			</div>
-			<div id="regModal" class="modal">
-				<div class="modal-content">
-					<span class="close">
-						<svg xml:space="preserve" enable-background="new 0 0 15 15" height="15px" id="cross" version="1.1" viewBox="0 0 15 15" width="15px" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
-							<path d="M5.792,7.499L0,0.707l0.708-0.706L7.497,5.79L7.5,5.793L14.293,0L15,0.707L9.207,7.5l0.001,0.001L15,14.293
-							l-0.708,0.706L7.503,9.21L7.5,9.207L0.707,15L0,14.293L5.792,7.499L5.792,7.499z"/>
-						</svg>
-					</span>
-					<div class="form">
-						<div class="form__block">
-							<input type="text" class="validation validation__footer-form" id="nameFooter" name="user_name" placeholder="Name" autofocus>
-							<input type="email" class="validation validation__footer-form validation__footer-email" id="emailFooter" name="email" placeholder="Email">
-							<textarea class="validation validation__textarea validation__footer-form" id="descrFooter" name="description" placeholder="Give us a short description of the info you want us to provide. Thanks!"></textarea>
-							<div class="validation__text validation__text-footer">
-								<img src="./img/estimate/invalid.svg" alt="invalid">
-								<span class="valid__text valid__text-all_forms">please fill these fields</span>
-							</div>
-							<button class="btn btn_send" id="formBtnFooter">Let's do it</button>
+						<div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="1" data-height="50" data-clutchcompany-id="1396899">
+							<svg class="cw__svg" xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" viewBox="0 0 19.5 22"><path fill="#fff" d="M15.2 15.6c-1.1 1-2.6 1.6-4.2 1.6-3.6 0-6.2-2.6-6.2-6.2S7.4 4.9 11 4.9c1.6 0 3.1.5 4.2 1.5l.8.7 3.4-3.4-.9-.8C16.6 1 13.9 0 11 0 4.6 0 0 4.6 0 10.9 0 17.2 4.7 22 11 22c2.9 0 5.6-1 7.6-2.9l.8-.8-3.4-3.4-.8.7z"/><circle fill="#ff3d2e" cx="10.8" cy="11" r="3.7"/></svg>
 						</div>
-						<div class="send__message">Thanks, your letter sent.</div>
-						<div class="notsend__message">Sorry, your letter not sent.</div>
 					</div>
 				</div>
-				<div class="modal__back"></div>
 			</div>
 		</footer>
 		<a href="#" class="scrollup"></span></a>

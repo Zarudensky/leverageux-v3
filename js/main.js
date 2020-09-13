@@ -2,7 +2,7 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 		var wt = $(window).scrollTop();
 		var wh = $(window).height();
-		var footerTitleTop = $('#title_fr').offset().top;
+		var footerCalendarTop = $('#calendar_fr').offset().top;
 		var footerLogo = $('.footer__logo').offset().top + $('.footer__logo').height();
 		// fixed/no fixed heder
 		if($('#btn_mn').length) {
@@ -10,7 +10,7 @@ $(document).ready(function(){
 			var headerBtnHeight = $('#btn_mn').outerHeight();
 			if (wt >= headerBtnTop + headerBtnHeight) {
 				$('.header').addClass('scrolled');
-				if (wt + wh >= footerTitleTop) {
+				if (wt + wh >= footerCalendarTop) {
 					$('.header').removeClass('scrolled');
 				} else {
 					$('.header').addClass('scrolled');
@@ -21,7 +21,7 @@ $(document).ready(function(){
 		} else { 
 			if (wt >= 15.5) {
 				$('.header').addClass('scrolled');
-				if (wt + wh >= footerTitleTop) {
+				if (wt + wh >= footerCalendarTop) {
 					$('.header').removeClass('scrolled');
 				} else {
 					$('.header').addClass('scrolled');
@@ -130,15 +130,36 @@ $(document).ready(function(){
 		let firstname = $('#nameFooter').val();
 		let email = $('#emailFooter').val();
 		let descr = $('#descrFooter').val();
+		let feedbackModal = $('#feedbackModal');
+		let feedbackMessageSend = $('.feedback__message-send');
+		let feedbackMessageNotSend = $('.feedback__message-notsend');
 
-		let leadStatus = 'Interest';
-		let contactType = 'Prospect';
-		let source = 'Website';
-		let leadGeneration = 'Inbound';
-
-		console.log('sendForm');
+		console.log('send form');
 		console.log(firstname);
 		console.log(email);
 		console.log(descr);
-	}	
+		
+		$('#nameFooter').val('');
+		$('#emailFooter').val('');
+		$('#descrFooter').val('');
+		$('.validation__text').removeClass('active');
+		console.log('clear form');
+
+		$(feedbackMessageSend).show();
+		$(feedbackMessageNotSend).hide();
+		$(feedbackModal).show();
+
+		function hideModalAndMessages(){
+			$(feedbackModal).hide();
+			$(feedbackMessageNotSend).hide();
+			$(feedbackMessageSend).hide();
+			console.log('hide Modal And Messages');
+		}
+		setTimeout(hideModalAndMessages, 3000);
+	}
+	$('.close, .modal__back').click(function() {
+		$('#feedbackModal').hide();
+		$('.feedback__message-send').hide();
+		$('.feedback__message-notsend').hide();
+	});
 });
