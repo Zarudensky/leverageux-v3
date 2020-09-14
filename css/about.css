@@ -89,12 +89,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: calc(100% - 50px);
-  max-width: 1140px;
+  max-width: 1200px;
 }
 .persone__block {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 25%;
   margin-bottom: 35px;
@@ -105,6 +105,7 @@
   margin-bottom: 26px;
 }
 .persone__name {
+  white-space: nowrap;
   font-family: 'EkibastuzBlack';
   font-weight: normal;
   font-size: 24px;
@@ -380,6 +381,9 @@
   .review__block {
     width: 100%;
     max-width: 100%;
+  }
+  .persone__name {
+    white-space: normal;
   }
 }
 @media screen and (max-width: 440px) {

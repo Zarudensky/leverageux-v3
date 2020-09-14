@@ -112,11 +112,6 @@ $(document).ready(function(){
 	$('.validation__footer-form').focus(function() {
 		$(this).removeClass('invalid');
 	});
-	$('.validation__footer-form').focusout(function(){
-		if(!$(this).val().length >= 1){
-			$(this).addClass('invalid');
-		}
-	});
 	$('.validation__textarea').keyup(function() {
 		validText();
 	});

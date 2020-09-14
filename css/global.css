@@ -1075,6 +1075,7 @@ input {
 input[placeholder] {
   padding: 0 10px 0 25px;
   font-size: 14px;
+  color: #696969;
 }
 input:focus {
   box-shadow: inset 0px 0px 2px #00A2B8;
@@ -1092,6 +1093,7 @@ textarea[placeholder] {
   padding: 18px 10px 5px 25px;
   font-size: 14px;
   margin-top: 25px;
+  color: #696969;
 }
 textarea:focus {
   box-shadow: inset 0px 0px 2px #00A2B8;

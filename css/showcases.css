@@ -709,6 +709,24 @@
 .showcase .footer__logo span {
   color: #fff;
 }
+.showcase .founder__calendar {
+	color: #8bcfde;
+}
+.showcase .feedback__form-input,
+.showcase .feedback__form-descr {
+	border: 1px solid #cecece;
+}
+.showcase .validation.invalid {
+	border: 1px solid #EE4055;
+}
+.showcase .feedback__form-input[placeholder],
+.showcase .feedback__form-descr[placeholder] {
+	color: #cecece;
+}
+.showcase .feedback__form-input::placeholder,
+.showcase .feedback__form-descr::placeholder { 
+  color: #cecece;
+}
 
 @media screen and (max-width: 1650px) {
 	.showcase .section__hero {
