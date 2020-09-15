@@ -26,7 +26,10 @@ $(document).ready(function(){
 	  	$(modalBuy).hide();
 	  	$('#nameBuy').val("");
 	  	$('#emailBuy').val("");
-	  	$('#descrBuy').val("");
+			$('#descrBuy').val("");
+			$('.form__block').removeClass('disable');
+			$('.send__message').removeClass('active');
+			$('.notsend__message').removeClass('active');
 	});
 
 	$('.btn__concept').click(function() {
@@ -162,21 +165,21 @@ $(document).ready(function(){
 	    xhr.setRequestHeader('Content-Type', 'application/json');
 	    xhr.onreadystatechange = function() {
 	        if(xhr.readyState == 4 && xhr.status == 200) { 
-	            $('.form__block').addClass('disable');
+	          $('.form__block').addClass('disable');
 	       		$('.send__message').addClass('active');
 	        } else if (xhr.readyState == 4 && xhr.status == 400){
 	        	$('.form__block').addClass('disable');
 	        	$('.notsend__message').addClass('active');
 	        	console.log(xhr.responseText);
 	        } else if (xhr.readyState == 4 && xhr.status == 403){ 
-	            $('.form__block').addClass('disable');
+	          $('.form__block').addClass('disable');
 	        	$('.notsend__message').addClass('active');
 	        	console.log(xhr.responseText);        
 	        } else if (xhr.readyState == 4 && xhr.status == 404){ 
-	            $('.form__block').addClass('disable');
+	          $('.form__block').addClass('disable');
 	        	$('.notsend__message').addClass('active');
 	        	console.log(xhr.responseText);
-	        }
+					}
 	       } 
 	    // Sends the request	    
 	    xhr.send(final_data)
